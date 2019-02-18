@@ -1,9 +1,10 @@
 import React from "react";
-import CardService from "../../servises/cardservise";
 
-const Catalog = () => (
+import Card from "../CardProduct/card";
 
-const cards = CardService.getCard();
+
+const Catalog = () => {
+    
 
     return (
         <div>
@@ -41,21 +42,13 @@ const cards = CardService.getCard();
 
                     <div className="column-right">
                         <div className="products">
-                            <Card {this.props.cards}/>
-
-                            {/*{cards.map(card =>(*/}
-                                {/*<div key={card.id} className="product">*/}
-                                    {/*<img src={card.image} alt={card.name}/>*/}
-                                    {/*<p className="price">{card.amount}</p>*/}
-                                    {/*<h3>{card.name}</h3>*/}
-                                {/*</div>*/}
-                            {/*))}*/}
+                            <Card/>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     )
-)
+};
 
 export default Catalog;
