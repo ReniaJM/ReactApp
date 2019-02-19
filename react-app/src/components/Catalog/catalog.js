@@ -19,7 +19,7 @@ const Catalog = () => {
                                 <a href="#" className="clear">Clear</a>
                             </div>
                             <div>
-                                <input type="text" placeholder="search..."/>
+                                <input   onChange={this.handleChange} /> ref="filterTextInput" type="text" placeholder="search..."/>
                             </div>
                             <h4>Manufacturer</h4>
                             <div>
