@@ -4,7 +4,6 @@ import Card from "../CardProduct/card";
 
 
 const Catalog = () => {
-    
 
     return (
         <div>
@@ -39,15 +38,16 @@ const Catalog = () => {
                             </div>
                         </div>
                     </div>
-
-                    <div className="column-right">
-                        <div className="products">
-                            <Card/>
+                    <div>
+                        <div className="container">
+                            <div className="products">
+                                <Card/>
+                            </div>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
+       </div>
     )
 };
 
