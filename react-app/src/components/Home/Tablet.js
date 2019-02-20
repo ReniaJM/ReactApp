@@ -4,14 +4,14 @@ import PropTypes from 'prop-types';
 
 const Tablet = () => {
     const products = CardService.getCard();
-    const categoryDesktops = products
+    const categoryTablet = products
     .filter(product => product.category === "tablet")
     .filter(product => product.featured === true);
     return (
         <div>
             <div className="container">
                 <div className="products">
-                    {categoryDesktops.map(product =>(
+                    {categoryTablet.map(product =>(
                         <div  key={product.id} className="product">
                             <img src={product.image} alt={product.name}/>
                             <p className="price">{product.amount}</p>
@@ -25,7 +25,7 @@ const Tablet = () => {
 };
 
 Tablet.propTypes = {
-    id: PropTypes.number,
+    id: PropTypes.string,
     name: PropTypes.string,
     amount: PropTypes.number,
     image: PropTypes.string,

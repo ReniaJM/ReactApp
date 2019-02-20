@@ -25,7 +25,7 @@ const Desktop = () => {
 
 };
 Desktop.propTypes = {
-    id: PropTypes.number,
+    id: PropTypes.string,
     name: PropTypes.string,
     amount: PropTypes.number,
     image: PropTypes.string,
